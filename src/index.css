@@ -14,6 +14,12 @@
   justify-content: flex-start;
 }
 
+.text-ellipsis {
+  overflow     : hidden;
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+}
+
 .section-three-box {
   width          : 1200px;
   justify-content: space-between;
@@ -75,4 +81,189 @@
   font-weight: normal;
   margin     : 7px 0 20px;
   padding    : 0;
+}
+
+.section-three-tabs {
+  width     : 353px;
+  height    : 20px;
+  overflow-y: auto;
+}
+
+.section-three-tabs ul {
+  height     : 20px;
+  line-height: 20px;
+  margin     : 0;
+  padding    : 0;
+}
+
+.section-three-tabs li {
+  list-style : none;
+  margin     : 0 10px;
+  height     : 20px;
+  font-size  : 15px;
+  font-family: MicrosoftYaHei;
+  color      : #333333;
+  line-height: 20px;
+  cursor     : pointer;
+}
+
+.section-three-tabs li.active {
+  color: #FE2E54;
+}
+
+.section-three-tabs li:first-child {
+  margin: 0 10px 0 0;
+}
+
+.section-three-tabs li:last-child {
+  margin: 0 0 0 10px;
+}
+
+.section-three-product {
+  height  : 410px;
+  width   : 353px;
+  overflow: hidden;
+}
+
+.section-three-product ul {
+  margin : 0;
+  padding: 0;
+}
+
+.section-three-product ul li {
+  list-style: none;
+  height    : 410px;
+  width     : 353px;
+}
+
+.section-three-card {
+  width     : 353px;
+  height    : 106px;
+  margin-top: 24px;
+}
+
+.section-three-card-img {
+  width   : 106px;
+  height  : 106px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-three-card-img label {
+  background     : url('./images/label@2x.png') top center no-repeat;
+  background-size: 28px 32px;
+  position       : absolute;
+  width          : 28px;
+  height         : 32px;
+  line-height    : 30px;
+  text-align     : center;
+  box-sizing     : border-box;
+  left           : 0;
+  top            : 0;
+  font-size      : 16px;
+  font-family    : Arial-BoldMT, Arial;
+  font-weight    : normal;
+  color          : #FFFFFF;
+}
+
+.section-three-card-img img {
+  width : 106px;
+  height: 106px;
+}
+
+.section-three-card-info {
+  width       : 247px;
+  height      : 106px;
+  box-sizing  : border-box;
+  padding-left: 18px;
+  align-items : flex-start;
+}
+
+.section-three-card-info h5 {
+  margin : 0;
+  padding: 0;
+  width  : 229px;
+}
+
+.section-three-card-info h5 span {
+  width       : 213px;
+  padding-left: 2px;
+}
+
+.section-three-feature {
+  height   : 16px;
+  margin   : 10px 0 6px 0;
+  flex-wrap: wrap;
+}
+
+.section-three-feature span {
+  height       : 16px;
+  padding      : 0 3px;
+  height       : 16px;
+  background   : #FFE8E7;
+  border-radius: 2px;
+  font-size    : 12px;
+  font-family  : PingFangSC-Regular, PingFang SC;
+  font-weight  : 400;
+  margin       : 0 4px;
+  color        : #FF2828;
+}
+
+.section-three-feature span:first-child {
+  margin: 0 4px 0 0;
+}
+
+.section-three-price {
+  height     : 23px;
+  align-items: baseline;
+}
+
+.section-three-price span {
+  font-size  : 21px;
+  font-family: ArialMT;
+  color      : #FE2E2E;
+}
+
+.section-three-price span i {
+  width        : 8px;
+  font-size    : 14px;
+  font-family  : ArialMT;
+  color        : #FE2E2E;
+  padding-right: 3px;
+  font-style   : normal;
+}
+
+.section-three-price u {
+  font-size      : 12px;
+  font-family    : ArialMT;
+  color          : #ABABAB;
+  text-decoration: none;
+  padding-left   : 4px;
+}
+
+.section-three-sales {
+  width        : 165px;
+  height       : 21px;
+  line-height  : 21px;
+  text-align   : center;
+  margin-top   : 5px;
+  background   : #FFEEE6;
+  border-radius: 0px 11px 11px 11px;
+  font-size    : 13px;
+  font-family  : PingFangSC-Regular, PingFang SC;
+  font-weight  : 400;
+  color        : #BE4603;
+}
+
+.section-three-sales span {
+  color  : #FF5B00;
+  padding: 0 1px;
+}
+
+.section-three-lable-tmall {
+  width          : 14px;
+  height         : 14px;
+  display        : inline-block;
+  background     : url('./images/tmall.png') center center no-repeat;
+  background-size: 14px 14px;
 }
