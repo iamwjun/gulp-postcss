@@ -1,0 +1,26 @@
+{
+  "name": "webpack-postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iplash/webpack-postcss.git"
+  },
+  "keywords": [
+    "webpack",
+    "postcss"
+  ],
+  "author": "iamk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iplash/webpack-postcss/issues"
+  },
+  "homepage": "https://github.com/iplash/webpack-postcss#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
