@@ -22,6 +22,7 @@
 
 .section-three-box {
   width          : 1200px;
+  margin-top     : 30px;
   justify-content: space-between;
 }
 
@@ -170,6 +171,7 @@
   position       : absolute;
   margin-top     : -20px;
   visibility     : hidden;
+  cursor         : pointer;
   z-index        : 11;
   top            : 50%;
 }
@@ -431,4 +433,282 @@
   display        : inline-block;
   background     : url('./images/tmall.png') center center no-repeat;
   background-size: 14px 14px;
+}
+
+.section-brand-selection {
+  margin-top : 30px;
+  width      : 1200px;
+  height     : 611px;
+  box-sizing : border-box;
+  padding    : 20px 15px 20px 20px;
+  background : #FFFFFF;
+  align-items: flex-start;
+}
+
+.section-brand-title {
+  height     : 31px;
+  font-size  : 24px;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+  font-weight: bold;
+  color      : #333333;
+  line-height: 31px;
+  align-items: baseline;
+  margin     : 0;
+  padding    : 0;
+  width      : 1165px;
+}
+
+.section-brand-title span {
+  height      : 17px;
+  font-size   : 13px;
+  font-family : MicrosoftYaHei;
+  color       : #888888;
+  line-height : 17px;
+  padding-left: 10px;
+}
+
+.section-brand-selection-item {
+  width     : 1165px;
+  height    : 250px;
+  margin-top: 20px;
+}
+
+.section-brand-selection-store {
+  width              : 210px;
+  height             : 250px;
+  background-position: top center;
+  background-repeat  : no-repeat;
+  background-size    : 210px 250px;
+  align-items        : flex-start;
+  justify-content    : space-between;
+}
+
+.section-brand-store-top {
+  padding: 8px;
+}
+
+.section-brand-store-top .sales {
+  width          : 102px;
+  height         : 22px;
+  border-radius  : 11px;
+  box-sizing     : border-box;
+  padding-left   : 23px;
+  background     : url('./images/store@2x.png') 7px 5px no-repeat #000000;
+  opacity        : 0.25;
+  background-size: 14px 12px;
+  font-size      : 13px;
+  font-family    : PingFangSC-Regular, PingFang SC;
+  font-weight    : 400;
+  text-decoration: none;
+  margin-bottom  : 8px;
+  color          : #FFFFFF;
+}
+
+.section-brand-store-top .follow {
+  width          : 113px;
+  height         : 22px;
+  border-radius  : 11px;
+  box-sizing     : border-box;
+  padding-left   : 23px;
+  background     : url('./images/heart@2x.png') 7px 5px no-repeat#FF0000;
+  opacity        : .79;
+  background-size: 14px 12px;
+  font-size      : 13px;
+  font-family    : PingFangSC-Regular, PingFang SC;
+  font-weight    : 400;
+  text-decoration: none;
+  margin-bottom  : 8px;
+  color          : #FFFFFF;
+}
+
+.section-brand-store-top .countdown {
+  padding        : 0 8px;
+  height         : 22px;
+  background     : #000000;
+  border-radius  : 11px;
+  opacity        : 0.59;
+  font-size      : 13px;
+  font-family    : PingFangSC-Regular, PingFang SC;
+  font-weight    : 400;
+  justify-content: center;
+  color          : #FFFFFF;
+}
+
+.section-brand-store-logo {
+  padding: 12px;
+}
+
+.section-brand-store-logo img {
+  width        : 46px;
+  height       : 46px;
+  border-radius: 50%;
+}
+
+.section-brand-store-info {
+  align-items: flex-start;
+}
+
+.section-brand-store-info span:nth-child(1) {
+  color      : #FFFFFF;
+  height     : 26px;
+  font-size  : 20px;
+  font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
+  font-weight: bold;
+  color      : #FFFFFF;
+  line-height: 26px;
+}
+
+.section-brand-store-info span:nth-child(2) {
+  height     : 18px;
+  font-size  : 13px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color      : #FFFFFF;
+  line-height: 18px;
+}
+
+.section-brand-store-product {
+  width     : 955px;
+  height    : 250px;
+  box-sizing: border-box;
+  overflow  : hidden;
+  background: linear-gradient(90deg, #FFFCFC 0%, #FFF3F6 100%);
+  padding   : 24px 10px 22px 0;
+  position  : relative;
+}
+
+.section-brand-store-product ul {
+  width     : 2835px;
+  height    : 204px;
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+  transition: all .75s ease-in-out;
+}
+
+.section-brand-store-product ul.first-section {
+  transform: translate3d(0, 0, 0);
+}
+
+.section-brand-store-product ul.second-section {
+  transform: translate3d(-945px, 0, 0);
+}
+
+.section-brand-store-product ul.last-section {
+  transform: translate3d(-1890px, 0, 0);
+}
+
+.section-brand-store-product ul li {
+  width       : 189px;
+  height      : 204px;
+  box-sizing  : border-box;
+  padding-left: 20px;
+  list-style  : none;
+}
+
+.section-brand-product-link {
+  width          : 169px;
+  height         : 204px;
+  text-decoration: none;
+}
+
+.section-brand-product-img {
+  width   : 140px;
+  height  : 140px;
+  position: relative;
+}
+
+.section-brand-product-img img {
+  width   : 140px;
+  height  : 140px;
+  position: absolute;
+  top     : 0;
+  left    : 0;
+  z-index : 9;
+}
+
+.section-brand-product-img span.top {
+  width        : 97px;
+  height       : 18px;
+  line-height  : 18px;
+  text-align   : center;
+  background   : rgba(255, 255, 255, 0.9);
+  border-radius: 9px;
+  position     : absolute;
+  bottom       : 30px;
+  left         : 4px;
+  z-index      : 10;
+  font-size    : 13px;
+  font-family  : PingFangSC-Regular, PingFang SC;
+  font-weight  : 400;
+  color        : #FF0000;
+}
+
+.section-brand-product-img span.discount {
+  width      : 47px;
+  height     : 17px;
+  background : rgb(0, 0, 0);
+  opacity    : 0.45;
+  position   : absolute;
+  bottom     : 5px;
+  left       : 4px;
+  z-index    : 10;
+  font-size  : 13px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color      : #FFFFFF;
+  line-height: 17px;
+  text-align : center;
+}
+
+.section-brand-product-link h3 {
+  padding        : 0;
+  width          : 169px;
+  justify-content: flex-start;
+  margin         : 14px 0 9px;
+  height         : 19px;
+}
+
+.section-brand-product-link h3 span {
+  width       : 153px;
+  padding-left: 2px;
+  font-size   : 14px;
+  font-family : MicrosoftYaHei;
+  color       : #333333;
+}
+
+.section-brand-product-bottom {
+  justify-content: space-between;
+  align-items    : baseline;
+  height         : 20px;
+  width          : 169px;
+}
+
+.section-brand-product-bottom span.price {
+  width      : 9px;
+  font-size  : 15px;
+  font-family: ArialMT;
+  color      : #FE2E2E;
+  align-items: baseline;
+}
+
+.section-brand-product-bottom span.price u {
+  text-decoration: none;
+  padding        : 0 3px 0 2px;
+  font-size      : 20px;
+}
+
+.section-brand-product-bottom span.price i {
+  font-size      : 12px;
+  font-family    : ArialMT;
+  color          : #ABABAB;
+  font-style     : normal;
+  text-decoration: line-through;
+}
+
+.section-brand-product-bottom span.sales {
+  font-size  : 13px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color      : #999999;
 }
