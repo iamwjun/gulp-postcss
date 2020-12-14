@@ -644,6 +644,10 @@
 </body>
 <script src="https://cmsstatic.ffquan.cn/other/jquery/1.12.4/jquery.min.js?v=202012091352"></script>
 <script>
+  function surplusAddZero(num) {
+    return num > 9 ? num : '0' + num;
+  }
+
   $('.section-brand-store-product').hover(function () {
     $(this).find('.section-three-cutover').addClass('cutover-hover')
   }, function () {
@@ -680,11 +684,12 @@
     var diffTimeStamp = Math.floor((endTimeStamp - currentTimeStamp) / 1000);
     //console.log(diffTimeStamp)
     var day = Math.floor(diffTimeStamp / 86400);
-    var hours = Math.floor((diffTimeStamp % 86400) / 3600);
-    var minute = Math.floor(diffTimeStamp % 3600 / 60);
-    var second = Math.floor(diffTimeStamp % 60);
-    $('.countdown').html('距结束 ' + (day ? day + '天' : '') + (hours > 9 ? hours : '0' + hours) + ':' + (minute > 9 ? minute : '0' + minute) + ':' + (second > 9 ? second : '0' + second))
+    var hours = surplusAddZero(Math.floor((diffTimeStamp % 86400) / 3600));
+    var minute = surplusAddZero(Math.floor(diffTimeStamp % 3600 / 60));
+    var second = surplusAddZero(Math.floor(diffTimeStamp % 60));
+    $('.countdown').html('距结束 ' + (day ? day + '天' : '') + hours + ':' + minute + ':' + second)
   }, 1000)
+  
 </script>
 
 </html>

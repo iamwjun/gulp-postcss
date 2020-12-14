@@ -270,6 +270,20 @@
   color          : #FFFFFF;
 }
 
+.section-three-card-img span {
+  left         : 0;
+  bottom       : 0;
+  height       : 19px;
+  line-height  : 19px;
+  position     : absolute;
+  background   : linear-gradient(90deg, #FF6594 0%, #FF2049 100%);
+  border-radius: 0px 0px 10px 0px;
+  padding      : 0 13px;
+  font-size    : 12px;
+  font-family  : MicrosoftYaHei;
+  color        : #FFFFFF;
+}
+
 .section-three-card-img img {
   width : 106px;
   height: 106px;
@@ -395,6 +409,14 @@
   border-radius: 8px;
   overflow     : hidden;
   position     : relative;
+}
+
+.not-started {
+  background: #2AC064;
+}
+
+.surplus-over {
+  background: #CECECE;
 }
 
 .section-three-surplus u {

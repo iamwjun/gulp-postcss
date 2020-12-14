@@ -515,7 +515,7 @@
               <div class="section-three-category section-flex-column first-page">
                 <a class="section-three-card section-flex-row" href="#" target="_blank">
                   <div class="section-three-card-img">
-                    <label>01</label>
+                    <span>第二件半价</span>
                     <img
                       src="http://img.alicdn.com/imgextra/i2/3965833216/O1CN01B2N1TP1ZcyO8PLcs0_!!3965833216.jpg_400x400.jpg"
                       alt="商品图片">
@@ -1007,13 +1007,42 @@
                       <span><i>¥</i>9.9</span>
                       <u>¥199</u>
                     </div>
-                    <div class="section-three-surplus">
-                      <u>限量还剩2323件</u>
-                      <span style="width: 68%;"></span>
+                    <div class="section-three-surplus surplus-countdown" data-start='1607890522068' data-end='1608020076261'>
+                      <u>限时还剩 00:00:00</u>
+                      <!-- 初始宽度为0 -->
+                      <span style="width: 0%;"></span>
                     </div>
                   </div>
                 </a>
                 <a class="section-three-card section-flex-row">
+                  <div class="section-three-card-img">
+                    <label>01</label>
+                    <img
+                      src="http://img.alicdn.com/imgextra/i2/3965833216/O1CN01B2N1TP1ZcyO8PLcs0_!!3965833216.jpg_400x400.jpg"
+                      alt="商品图片">
+                  </div>
+                  <div class="section-three-card-info section-flex-column">
+                    <h5 class="section-flex-row">
+                      <div class="section-three-lable-tmall"></div>
+                      <span class="text-ellipsis">李子柒 限定款正宗柳州螺蛳粉3包州螺蛳粉3包</span>
+                    </h5>
+                    <div class="section-three-feature section-flex-row">
+                      <span class="section-flex-row">聚划算</span>
+                      <span class="section-flex-row">三只松鼠</span>
+                      <span class="section-flex-row">券20元</span>
+                    </div>
+                    <div class="section-three-price section-flex-row">
+                      <span><i>¥</i>9.9</span>
+                      <u>¥199</u>
+                    </div>
+                    <div class="section-three-surplus surplus-countdown" data-start='1607890522068' data-end='1607975046261'>
+                      <u>限时还剩 00:00:00</u>
+                      <!-- 初始宽度为0 -->
+                      <span style="width: 0%;"></span>
+                    </div>
+                  </div>
+                </a>
+                <a class="section-three-card section-flex-row" href="#" target="_blank">
                   <div class="section-three-card-img">
                     <label>01</label>
                     <img
@@ -1061,9 +1090,8 @@
                       <span><i>¥</i>9.9</span>
                       <u>¥199</u>
                     </div>
-                    <div class="section-three-surplus">
-                      <u>限量还剩2323件</u>
-                      <span style="width: 68%;"></span>
+                    <div class="section-three-surplus surplus-over">
+                      <u>限量优惠已结束</u>
                     </div>
                   </div>
                 </a>
@@ -1088,13 +1116,12 @@
                       <span><i>¥</i>9.9</span>
                       <u>¥199</u>
                     </div>
-                    <div class="section-three-surplus">
-                      <u>限量还剩2323件</u>
-                      <span style="width: 68%;"></span>
+                    <div class="section-three-surplus not-started">
+                      <u>限量500件</u>
                     </div>
                   </div>
                 </a>
-                <a class="section-three-card section-flex-row">
+                <a class="section-three-card section-flex-row" data-end='1608017516857' href="#" target="_blank">
                   <div class="section-three-card-img">
                     <label>01</label>
                     <img
@@ -1115,35 +1142,9 @@
                       <span><i>¥</i>9.9</span>
                       <u>¥199</u>
                     </div>
-                    <div class="section-three-surplus">
+                    <div class="section-three-surplus surplus-countdown">
                       <u>限量还剩2323件</u>
-                      <span style="width: 68%;"></span>
-                    </div>
-                  </div>
-                </a>
-                <a class="section-three-card section-flex-row" href="#" target="_blank">
-                  <div class="section-three-card-img">
-                    <label>01</label>
-                    <img
-                      src="http://img.alicdn.com/imgextra/i2/3965833216/O1CN01B2N1TP1ZcyO8PLcs0_!!3965833216.jpg_400x400.jpg"
-                      alt="商品图片">
-                  </div>
-                  <div class="section-three-card-info section-flex-column">
-                    <h5 class="section-flex-row">
-                      <div class="section-three-lable-tmall"></div>
-                      <span class="text-ellipsis">李子柒 限定款正宗柳州螺蛳粉3包州螺蛳粉3包</span>
-                    </h5>
-                    <div class="section-three-feature section-flex-row">
-                      <span class="section-flex-row">聚划算</span>
-                      <span class="section-flex-row">三只松鼠</span>
-                      <span class="section-flex-row">券20元</span>
-                    </div>
-                    <div class="section-three-price section-flex-row">
-                      <span><i>¥</i>9.9</span>
-                      <u>¥199</u>
-                    </div>
-                    <div class="section-three-surplus">
-                      <u>限量还剩2323件</u>
+                      <!-- 初始宽度为0 -->
                       <span style="width: 68%;"></span>
                     </div>
                   </div>
@@ -1498,6 +1499,10 @@
 </body>
 <script src="https://cmsstatic.ffquan.cn/other/jquery/1.12.4/jquery.min.js?v=202012091352"></script>
 <script>
+  function surplusAddZero(num) {
+    return num > 9 ? num : '0' + num;
+  }
+
   $('.section-three-tabs ul li').hover(function () {
     if (!$(this).hasClass('active')) {
       $(this).parent().find('li').removeClass('active');
@@ -1546,20 +1551,46 @@
     if (!$(this).hasClass('.active')) {
       $(this).parent().find('span').removeClass('active');
       $(this).addClass('active');
-      if(paginationIndex === 0) {
+      if (paginationIndex === 0) {
         sectionCategory.removeClass('middle-page').removeClass('last-page').addClass('first-page');
         return;
       }
-      if(paginationIndex === 1) {
+      if (paginationIndex === 1) {
         sectionCategory.removeClass('frist-page').removeClass('last-page').addClass('middle-page');
         return;
       }
-      if(paginationIndex === 2) {
+      if (paginationIndex === 2) {
         sectionCategory.removeClass('first-page').removeClass('middle-page').addClass('last-page');
         return;
       }
     }
   })
+
+  $('.surplus-countdown').each(function (i) {
+    var surpplusStartTimeStamp = $(this).attr('data-start');
+    var surpplusEndTimeStamp = $(this).attr('data-end');
+
+    if (surpplusStartTimeStamp && surpplusEndTimeStamp && Date.now > surpplusEndTimeStamp) {
+      var that = $(this);
+      setInterval(function () {
+        var surpplusCurrentTimeStamp = Date.now();
+        var surpplusStartTimeStamp = that.attr('data-start');
+        var surpplusEndTimeStamp = that.attr('data-end');
+        var surpplusDiffdTimeStamp = surpplusEndTimeStamp - surpplusStartTimeStamp;
+        var surpplusPastTimeStamp = surpplusCurrentTimeStamp - surpplusStartTimeStamp;
+        var surpplusLeftTimeStamp = surpplusEndTimeStamp - surpplusCurrentTimeStamp;
+        if (surpplusLeftTimeStamp > 0) {
+          var timeLeftStamp = Math.floor((surpplusEndTimeStamp - surpplusCurrentTimeStamp) / 1000);
+          var surpplusHours = surplusAddZero(Math.floor(timeLeftStamp / 3600));
+          var surpplusMinute = surplusAddZero(Math.floor(timeLeftStamp % 3600 / 60));
+          var surpplusSecond = surplusAddZero(Math.floor(timeLeftStamp % 60));
+
+          that.find('u').html('<u>限时还剩 ' + surpplusHours + ':' + surpplusMinute + ':' + surpplusSecond + '</u>');
+          that.find('span').css({ width: Math.round(surpplusPastTimeStamp / surpplusDiffdTimeStamp * 100) + '%' })
+        }
+      }, 1000)
+    }
+  });
 </script>
 
 </html>
