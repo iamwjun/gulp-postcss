@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    body {
+      background: #F6F6F6;
+    }
+
+    .wrapper {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="section-three-box section-flex-row">
+      <div class="section-three-item">
+        <h3 class="section-three-title section-flex-row">
+          热销榜
+          <a href="#">
+            <img src="./images/more@2x.png" alt="更多">
+          </a>
+        </h3>
+        <h5 class="section-three-subtitle">汇总当下热销爆品</h5>
+        <div class="section-three-tabs section-flex-row">
+          <div>
+            <span class="active" data-id="4">居家日用</span>
+            <span class="" data-id="6">美食</span>
+            <span class="" data-id="2">母婴</span>
+            <span class="" data-id="3">美妆</span>
+            <span class="" data-id="1">女装</span>
+            <span class="" data-id="8">数码家电</span>
+            <span class="" data-id="7">文娱车品</span>
+            <span class="" data-id="10">内衣</span>
+            <span class="" data-id="14">家装家纺</span>
+            <span class="" data-id="5">鞋品</span>
+            <span class="" data-id="9">男装</span>
+            <span class="" data-id="12">配饰</span>
+            <span class="" data-id="13">户外运动</span>
+            <span class="" data-id="11">箱包</span>
+          </div>
+        </div>
+        <div class="section-three-product">
+          <ul class="section-flex-row" style="width:786px;transform: translate3d(0, 0, 0);">
+            <li>
+              <div class="section-three-category section-flex-column first-page">
+                <div class="section-three-category-skeleton section-flex-row">
+                  <div class="skeleton"></div>
+                  <div>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                  </div>
+                </div>
+                <div class="section-three-category-skeleton section-flex-row">
+                  <div class="skeleton"></div>
+                  <div>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                  </div>
+                </div>
+                <div class="section-three-category-skeleton section-flex-row">
+                  <div class="skeleton"></div>
+                  <div>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                    <span class="skeleton"></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cmsstatic.ffquan.cn/other/jquery/1.12.4/jquery.min.js?v=202012091352"></script>
+<script>
+  $('.section-three-tabs div span').hover(function () {
+    $(this).parent().css({ transform: 'translate3d(-' + $(this).position().left + 'px, 0, 0)' })
+  })
+</script>
+
+</html>

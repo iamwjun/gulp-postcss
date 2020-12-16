@@ -87,18 +87,20 @@
 .section-three-tabs {
   width     : 353px;
   height    : 20px;
-  padding   : 0 20px;
+  margin    : 0 20px;
   overflow-y: auto;
 }
 
-.section-three-tabs ul {
+.section-three-tabs ul, .section-three-tabs div {
   height     : 20px;
   line-height: 20px;
+  white-space: nowrap;
+  transition : all .35s ease-in-out;
   margin     : 0;
   padding    : 0;
 }
 
-.section-three-tabs li {
+.section-three-tabs ul li, .section-three-tabs div span {
   list-style : none;
   margin     : 0 10px;
   height     : 20px;
@@ -106,18 +108,19 @@
   font-family: MicrosoftYaHei;
   color      : #333333;
   line-height: 20px;
+  position   : relative;
   cursor     : pointer;
 }
 
-.section-three-tabs li.active {
+.section-three-tabs ul li.active, .section-three-tabs div span.active {
   color: #FE2E54;
 }
 
-.section-three-tabs li:first-child {
+.section-three-tabs ul li:first-child, .section-three-tabs div span:first-child {
   margin: 0 10px 0 0;
 }
 
-.section-three-tabs li:last-child {
+.section-three-tabs ul li:last-child, .section-three-tabs div span:last-child {
   margin: 0 0 0 10px;
 }
 
@@ -144,10 +147,11 @@
 }
 
 .section-three-category {
-  width     : 1176px;
-  height    : 390px;
-  flex-wrap : wrap;
-  transition: all .35s ease-in-out;
+  width        : 1176px;
+  height       : 390px;
+  flex-wrap    : wrap;
+  align-content: flex-start;
+  transition   : all .35s ease-in-out;
 }
 
 .first-page {
@@ -181,7 +185,8 @@
 }
 
 .cutover-next {
-  right: 0;
+  right        : 0;
+  border-radius: 10px 0 0 10px;
 }
 
 .cutover-previous span {
@@ -457,6 +462,22 @@
   background-size: 14px 14px;
 }
 
+.section-three-lable-tmallglobal {
+  width          : 14px;
+  height         : 14px;
+  display        : inline-block;
+  background     : url('./images/tmallglobal@2x.png') center center no-repeat;
+  background-size: 14px 14px;
+}
+
+.section-three-lable-supermarket {
+  width          : 14px;
+  height         : 14px;
+  display        : inline-block;
+  background     : url('./images/supermarket@2x.png') center center no-repeat;
+  background-size: 14px 14px;
+}
+
 .section-brand-selection {
   margin-top : 30px;
   width      : 1200px;
@@ -532,8 +553,8 @@
   border-radius  : 11px;
   box-sizing     : border-box;
   padding-left   : 23px;
-  background     : url('./images/heart@2x.png') 7px 5px no-repeat#FF0000;
-  opacity        : .79;
+  background     : url('../images/section/heart@2x.png') 7px 5px no-repeat #FF0000;
+  opacity        : 0.79;
   background-size: 14px 12px;
   font-size      : 13px;
   font-family    : PingFangSC-Regular, PingFang SC;
@@ -733,4 +754,78 @@
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color      : #999999;
+}
+
+.section-three-tabs-skeleton {
+  height: 20px;
+  width : 100%;
+}
+
+.section-three-category-skeleton {
+  width     : 393px;
+  height    : 106px;
+  margin-top: 24px;
+  padding   : 0 20px;
+  box-sizing: border-box;
+}
+
+.section-three-category-skeleton div:first-child {
+  width : 106px;
+  height: 106px;
+}
+
+.section-three-category-skeleton div:nth-child(2) {
+  flex        : 1;
+  height      : 106px;
+  box-sizing  : border-box;
+  padding-left: 18px;
+}
+
+.section-three-category-skeleton div:nth-child(2) span {
+  display: inline-block;
+}
+
+.section-three-category-skeleton div:nth-child(2) span:nth-child(1) {
+  width        : 229px;
+  height       : 17px;
+  border-radius: 5px;
+}
+
+.section-three-category-skeleton div:nth-child(2) span:nth-child(2) {
+  height       : 16px;
+  width        : 160px;
+  border-radius: 5px;
+  margin       : 10px 0 6px 0;
+}
+
+.section-three-category-skeleton div:nth-child(2) span:nth-child(3) {
+  height       : 23px;
+  width        : 70px;
+  border-radius: 5px;
+}
+
+.section-three-category-skeleton div:nth-child(2) span:nth-child(4) {
+  height       : 21px;
+  width        : 165px;
+  border-radius: 5px;
+  margin-top   : 6px;
+}
+
+.skeleton {
+  border-radius  : 5px;
+  background     : rgba(130, 130, 130, 0.1);
+  background     : -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.1)), color-stop(18%, rgba(130, 130, 130, 0.2)), color-stop(33%, rgba(130, 130, 130, 0.1)));
+  background     : linear-gradient(to right, rgba(130, 130, 130, 0.1) 8%, rgba(130, 130, 130, 0.2) 18%, rgba(130, 130, 130, 0.1) 33%);
+  background-size: 800px 100px;
+  animation      : wave-lines 2s infinite ease-out;
+}
+
+@keyframes wave-lines {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
 }
